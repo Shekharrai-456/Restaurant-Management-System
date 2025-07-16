@@ -1,0 +1,54 @@
+# Restaurant Management System
+# User(Roles)
+   - user_id
+   - name
+   - role
+   - contact
+   - password
+
+# Category
+   - category_id (id)
+   - name         (str)
+
+# Food/Menu
+   - food_id (int)
+   - food_name (str)
+   - food_price   (float)
+   - Category  (Foreign Key) 
+
+
+# Tables
+   - table_id (int)
+   - table_number (int/str)
+   - table_size (int)
+   - available(boolean)
+
+# Order 
+   - order_id (int)
+   - User_id (FK)
+   - quantity(int)
+
+# OrderItem
+   -orderitem(PK)
+   - Order(FK)
+   - Food(FK)
+
+# Ingredients
+   - ingredient_id (int)
+   - name
+
+# Storage
+   - storage_id (int)
+   - Ingredients(FK)
+   - quantity(int)
+
+# Recipe
+   - recipe_id (int)
+   - Food(FK)
+   - recipe
+
+User: 1, 2
+
+Food: pizza, buger
+
+Order: 1: pizza, buger -- 2: pizza
